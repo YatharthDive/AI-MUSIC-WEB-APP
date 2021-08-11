@@ -1,0 +1,26 @@
+.heading{
+    font-size:25px;
+    width:100%;
+    margin:0px;
+}
+.NOTE{
+    font-size:15px;
+    color:black
+}
+body{
+    background-size: cover;
+}
+.div_speed{
+    float:center;
+}
+.div_speed_img{
+    width:200px;
+    border-radius:100px;
+}
+#song{
+    font-size:20px;
+    margin:10px
+}
+.div_volume{
+    float:right;
+}
