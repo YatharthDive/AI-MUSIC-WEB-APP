@@ -14,7 +14,8 @@ body{
     float:center;
 }
 .div_speed_img{
-    width:200px;
+    width:100px;
+    height:100px;
     border-radius:100px;
 }
 #song{
@@ -23,4 +24,16 @@ body{
 }
 .div_volume{
     float:right;
+}
+.play_button{
+    width:130px;
+    font-size:25px;
+}
+canvas{
+    border:5px;
+    border-style:solid;
+    border-color: red;
+    border-radius:25px;
+    box-shadow:5px 5px 5px cyan;
+    margin-top:300px;
 }
