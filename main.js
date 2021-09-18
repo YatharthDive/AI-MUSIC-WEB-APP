@@ -3,7 +3,7 @@ leftWristY = 0
 rightWristX = 0
 rightWristY = 0
 scoreRW = 0
-image = ""
+image1 = ""
 song1 = ""
 song2 = ""
 scoreLW = 0
@@ -22,7 +22,7 @@ function setup() {
     v1.hide()
     posenet = ml5.poseNet(v1, modelLoaded)
     posenet.on("pose", gotPoses)
-    document.getElementById("songimage1").src = image;
+    document.getElementById("songimage1").src = image1;
 }
 
 function gotPoses(results) {
@@ -54,8 +54,8 @@ function draw() {
         song2.stop()
         if (song1_status == false) {
             song1.play()
-            image = "Money Hiest image.jpg"
-            document.getElementById("songimage1").src = image;
+            image1 = "Money Hiest image.jpg"
+            document.getElementById("songimage1").src = image1;
             document.getElementById("song").innerHTML = "Playing Money Heist";
         }
     }
@@ -66,8 +66,8 @@ function draw() {
         song1.stop()
         if (song2_status == false) {
             song2.play()
-            image = "Harry Potter.jpg"
-            document.getElementById("songimage1").src = image;
+            image1 = "Harry Potter.jpg"
+            document.getElementById("songimage1").src = image1;
             document.getElementById("song").innerHTML = "Playing Harry Potter";
         }
     }
@@ -77,7 +77,7 @@ function play() {
     song1.play();
     song1.setVolume(1)
     song1.rate(1)
-    image = "Money Hiest image.jpg"
-    document.getElementById("songimage1").src = image;
+    image1 = "Money Hiest image.jpg"
+    document.getElementById("songimage1").src = image1;
     document.getElementById("song").innerHTML = "Playing Money Heist";
 }
